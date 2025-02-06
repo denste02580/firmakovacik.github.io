@@ -1,0 +1,84 @@
+:root {
+    --pink: #d66c25;
+    --gray: #808080;
+    --orange: #ff6600;
+}
+
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.paymentContainer {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.paymentHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.paymentHeader h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.paymentMethods {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.paymentMethod {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.paymentMethod h2 {
+    font-size: 1.8rem;
+    color: var(--pink);
+    margin-bottom: 1rem;
+}
+
+.paymentMethod input,
+.paymentMethod button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.paymentMethod button {
+    background-color: var(--pink);
+    color: white;
+    cursor: pointer;
+}
+
+.paymentMethod button:hover {
+    background-color: #d15417;
+}
+
+.paymentMethod .paypalBtn {
+    background-color: #0070ba;
+}
+
+.paymentMethod .paypalBtn:hover {
+    background-color: #005f8e;
+}
+
+.paymentMethod .applePayBtn {
+    background-color: #333;
+}
+
+.paymentMethod .applePayBtn:hover {
+    background-color: #555;
+}

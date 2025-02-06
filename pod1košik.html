@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="shopping_styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Košík</h1>
+            <div class="shopping">
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        <div class="list"></div>
+    </div>
+
+    <div class="card">
+        <h1>Zhrnutie</h1>
+        <ul class="listCard"></ul>
+        <div class="checkOut">
+            <div class="total">0 €</div>
+            <div class="closeShopping" onclick="closeCart()">Zatvoriť</div>
+            <div class="payButton" onclick="goToPaymentPage()">Zaplať</div>
+        </div>
+    </div>
+
+    <div id="products" class="product-container">
+        <!-- Dynamicky generované produkty sa tu zobrazia -->
+    </div>
+
+    <!-- Bublina s nápisom Späť -->
+    <div class="backBubble" onclick="goBack()">
+        <span>Späť</span>
+    </div>
+
+    <script>
+        // Funkcia pre presmerovanie na stránku payment.html
+        function goToPaymentPage() {
+            window.location.href = "payment.html";
+        }
+
+        // Funkcia na návrat na predchádzajúcu stránku v histórii prehliadača
+        function goBack() {
+            window.history.back();
+        }
+
+        // Funkcia na zatvorenie košíka
+        function closeCart() {
+            document.querySelector('.card').style.display = 'none';
+        }
+        
+    </script>
+
+
+    <script src="shopping.js"></script>
+</body>
+</html>
+
+
+
+
+
