@@ -1,0 +1,243 @@
+:root {
+    --pink: #d66c25;
+    --gray: #808080;
+    --orange: #ff6600;
+}
+
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    transition: transform 0.5s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    background: rgba(252, 194, 146, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .shopping {
+    position: relative;
+    text-align: right;
+}
+
+header .shopping a {
+    font-size: 2rem;
+    color: var(--gray);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+header .shopping a:hover {
+    color: var(--orange);
+}
+
+header .shopping span {
+    background: var(--pink);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.4rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.list .item {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(247, 139, 67, 0.3);
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list .item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 2rem rgba(247, 139, 67, 0.5);
+}
+
+.list .item img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.list .item .title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 1rem 0;
+}
+
+.list .item .price {
+    font-size: 1.6rem;
+    color: var(--pink);
+    margin: 1rem 0;
+}
+
+.list .item button {
+    background-color: #4e4e4e;
+    color: #fff;
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.list .item button:hover {
+    background: var(--pink);
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #242424;
+    height: 100vh;
+    transition: left 0.5s ease;
+    box-shadow: -0.5rem 0 1rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-20rem);
+}
+
+.card h1 {
+    color: var(--pink);
+    font-weight: 300;
+    margin: 0;
+    padding: 2rem;
+    font-size: 2.5rem;
+    background: #1c1f25;
+    text-align: center;
+}
+
+.card .checkOut {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+.card .checkOut div {
+    flex: 1;
+    background-color: var(--pink);
+    color: #fff;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card .checkOut div:nth-child(2) {
+    background-color: #1c1f25;
+}
+
+.card .checkOut div:hover {
+    background: rgba(214, 108, 37, 0.8);
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 50px;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.listCard li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCard li img {
+    width: 90%;
+    border-radius: 0.5rem;
+}
+
+.listCard li button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+}
+
+.listCard li button:hover {
+    background: var(--pink);
+    color: #fff;
+}
+
+.listCard .count {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+/* Bublina s nápisom Späť */
+.backBubble {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: var(--pink);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    z-index: 999;
+}
+
+.backBubble:hover {
+    transform: scale(1.1);
+    background-color: #d66c25;
+}
+
+.backBubble span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
