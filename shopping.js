@@ -30,7 +30,7 @@ function initApp() {
         newDiv.classList.add('item');
         newDiv.innerHTML = `
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
+            <div class="price">${value.price.toLocaleString()} €</div>
             <button onclick="addToCard(${key})">Pridať do košíka</button>
         `;
         list.appendChild(newDiv);
@@ -63,7 +63,7 @@ function reloadCard() {
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
                 <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
+                <div>${value.price.toLocaleString()} €</div>
                 <div>
                     <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
