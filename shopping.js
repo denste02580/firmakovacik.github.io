@@ -19,7 +19,20 @@ let products = [
     { id: 3, name: 'Zvonček', image: 'img3.PNG', price: 24.20 },
     { id: 4, name: 'Kovaný ozdobný pánt', image: 'img4.png', price: 31.90 },
     { id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-    { id: 6, name: 'Krbové náradie', image: 'img6.png', price: 65.50 }
+    { id: 6, name: 'Krbové náradie', image: 'img6.png', price: 65.50 },
+    { id: 6, name: 'Svietnik', image: 'img6.png', price: 100.00 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
+{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 }
 ];
 
 let listCards = [];
