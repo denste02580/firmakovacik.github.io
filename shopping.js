@@ -20,19 +20,19 @@ let products = [
     { id: 4, name: 'Kovaný ozdobný pánt', image: 'img4.png', price: 31.90 },
     { id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
     { id: 6, name: 'Krbové náradie', image: 'img6.png', price: 65.50 },
-    { id: 6, name: 'Svietnik', image: 'img6.png', price: 100.00 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 },
-{ id: 5, name: 'Polička na knihy', image: 'img5.png', price: 42.80 }
+    { id: 7, name: 'Svietnik', image: 'img6.png', price: 100.00 },
+{ id: 8, name: 'stolík', image: 'img5.png', price: 250.00 },
+{ id: 9, name: 'lampa-chrobák', image: 'img5.png', price: 140.00 },
+{ id: 10, name: 'Anjel', image: 'img5.png', price: 280.00 },
+{ id: 11, name: 'Stoján na nôž-rak', image: 'img5.png', price: 350.00 },
+{ id: 12, name: 'Vešiak', image: 'img5.png', price: 350.00 },
+{ id: 13, name: 'Lavička na topánky', image: 'img5.png', price: 450.00 },
+{ id: 14, name: 'mreža', image: 'img5.png', price: 160.00 },
+{ id: 15, name: 'kované hodiny', image: 'img5.png', price: 880.00 },
+{ id: 16, name: 'hojdacie kreslo', image: 'img5.png', price: 1500.00 },
+{ id: 17, name: 'záhradná lavička', image: 'img5.png', price: 1800.00 },
+{ id: 18, name: 'drak', image: 'img5.png', price: 4990.00 },
+{ id: 19, name: 'lavička lásky', image: 'img5.png', price: 6300.00 }
 ];
 
 let listCards = [];
