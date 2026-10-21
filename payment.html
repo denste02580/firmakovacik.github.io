@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platba</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="payment_styles.css">
+</head>
+<body>
+    <!-- Starý obsah košíka je teraz skrytý a bude nahradený touto stránkou -->
+    <div class="paymentContainer">
+        <div class="paymentHeader">
+            <h1>Možnosti platby</h1>
+        </div>
+
+        <div class="paymentMethods">
+            <div class="paymentMethod">
+                <h2>Platba kartou</h2>
+                <form id="paymentForm">
+                    <div>
+                        <label for="cardNumber">Číslo karty</label>
+                        <input type="text" id="cardNumber" required>
+                    </div>
+                    <div>
+                        <label for="expiryDate">Dátum expirácie (MM/YY)</label>
+                        <input type="text" id="expiryDate" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" required>
+                    </div>
+                    <button type="submit">Potvrdiť platbu</button>
+                </form>
+            </div>
+
+            <div class="paymentMethod">
+                <h2>Platba cez PayPal</h2>
+                <button class="paypalBtn">Prejsť na PayPal</button>
+            </div>
+
+            <div class="paymentMethod">
+                <h2>Platba cez Apple Pay</h2>
+                <button class="applePayBtn">Prejsť na Apple Pay</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

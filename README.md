@@ -1,1 +1,1 @@
-# firmakovacik.github.io
+# kovacik.github.io
