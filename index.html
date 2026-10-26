@@ -66,16 +66,16 @@
         .about .row {
             display: flex;
             flex-wrap: wrap;
-            align-items: flex-start;   /* video sa nenatiahne na výšku textu */
+            align-items: flex-start;   
             gap: 3rem;
             padding: 2rem 5%;
         }
 
-        /* Video ostane pri scrollovaní prilepené na ľavej strane */
+        
         .about .row .video-container {
             flex: 1 1 35rem;
             position: sticky;
-            top: 10rem;                /* odstup od hlavičky, prípadne uprav */
+            top: 10rem;                
             align-self: flex-start;
         }
 
@@ -124,7 +124,7 @@
             color: #333;
         }
 
-        /* Na mobile a tablete nie je sticky, video je nad textom */
+       
         @media (max-width: 768px) {
             .about .row .video-container {
                 position: static;
