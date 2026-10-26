@@ -125,17 +125,18 @@
         }
 
        
-        @media (max-width: 768px) {
-            .about .row .video-container {
-                position: static;
-                flex: 1 1 100%;
-            }
-        }
+       @media (max-width: 768px) {
+    .about .row .video-container {
+        position: relative;   
+        top: auto;
+        flex: 1 1 100%;
+    }
+}
     </style>
 
     <div class="row">
         <div class="video-container">
-            <video src="video.mp4" loop autoplay muted></video>
+            <video src="video.mp4" loop autoplay muted playsinline preload="auto"></video>
             <h3>Kováčik je firma malá, ktorá s kovom divy stvára </h3>
         </div>
 
