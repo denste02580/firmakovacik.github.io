@@ -58,54 +58,109 @@
 
     <!-- tu konči ok-->
      <!-- about start-->
-     <section class="about" id="about">
-        <h1 class="heading"> <span> O </span> nás </h1>
-        
-        <div class="row">
-         <div class="video-container">
-                <video src="video.mp4" loop autoplay muted></video>
-                <h3>Kováčik je firma malá, ktorá s kovom divy stvára </h3>
-            </div>
-           <div class="content">
+<section class="about" id="about">
+    <h1 class="heading"> <span> O </span> nás </h1>
 
-  <h1>Prečo si vybrať práve nás</h1>
+    <style>
+        .about .row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 3rem;
+            padding: 2rem 5%;
+        }
 
-  <h2>Tradícia a tvorba od roku 2023</h2>
-  <p>Firma <strong>Kováčik, s.r.o.</strong> začala svoju históriu v roku 2023 s jasným cieľom – prinášať do sveta kovu originalitu, precíznosť a umeleckú hodnotu.</p>
+        .about .row .video-container {
+            flex: 1 1 35rem;
+        }
 
-  <h2>Umelecké kováčstvo na mieru</h2>
-  <p>Naša kováčska dielňa sa špecializuje na <strong>umelecké spracovanie kovov</strong>. Zabezpečíme pre vás kompletný proces od:</p>
-  <ul>
-    <li>úvodnej konzultácie,</li>
-    <li>grafického návrhu,</li>
-    <li>až po finálnu realizáciu diela.</li>
-  </ul>
-  <p>Vytvárame originálne produkty pre <strong>interiér aj exteriér</strong>, presne podľa vašich predstáv.</p>
+        .about .row .content {
+            flex: 1 1 45rem;
+            text-transform: none;
+        }
 
-  <h2>Mladý kreatívny tím</h2>
-  <p>Naši mladí umelci vkladajú do každej realizácie maximálnu snahu, kreativitu a remeselnú česť. Každý kus je výsledkom ručnej práce, nadšenia a profesionálneho prístupu.</p>
+        .about .row .content * {
+            text-transform: none;
+        }
 
-  <h2>Filozofia tvorby</h2>
-  <p>Veríme v diela, ktoré:</p>
-  <ul>
-    <li>majú <strong>vysokú umeleckú hodnotu</strong>,</li>
-    <li>sú <strong>kuté na mieru</strong>,</li>
-    <li>dokážu sprijemniť pracovné aj súkromné prostredie,</li>
-    <li>spájajú estetiku, funkčnosť a trvácnosť.</li>
-  </ul>
+        .about .row .content h1 {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
 
-  <h2>Udržateľnosť a zodpovednosť</h2>
-  <p>Vo výrobe využívame <strong>prvky cirkulárnej ekonomiky</strong>, čím prispievame k efektívnemu využívaniu materiálov a ochrane životného prostredia.</p>
+        .about .row .content h2 {
+            font-size: 2.1rem;
+            color: #d2691e;
+            margin: 2rem 0 .8rem;
+        }
 
-  <h2>Medzinárodná spolupráca</h2>
-  <p>Naše diela majú presah za hranice Slovenska – <strong>spolupracujeme so zahraničnými partnermi</strong>, vďaka čomu prinášame moderné trendy a techniky priamo do našej dielne.</p>
+        .about .row .content p {
+            font-size: 1.7rem;
+            line-height: 1.8;
+            color: #555;
+            padding: .5rem 0;
+        }
 
-            </div>
-     
+        .about .row .content ul {
+            list-style: disc;
+            padding-left: 3rem;
+            margin: .5rem 0 1rem;
+        }
+
+        .about .row .content ul li {
+            font-size: 1.7rem;
+            line-height: 1.8;
+            color: #555;
+            padding: .2rem 0;
+        }
+
+        .about .row .content strong {
+            color: #333;
+        }
+    </style>
+
+    <div class="row">
+        <div class="video-container">
+            <video src="video.mp4" loop autoplay muted></video>
+            <h3>Kováčik je firma malá, ktorá s kovom divy stvára </h3>
         </div>
-    </section>
 
+        <div class="content">
+            <h1>Prečo si vybrať práve nás</h1>
 
+            <h2>Tradícia a tvorba od roku 2023</h2>
+            <p>Firma <strong>Kováčik, s.r.o.</strong> začala svoju históriu v roku 2023 s jasným cieľom – prinášať do sveta kovu originalitu, precíznosť a umeleckú hodnotu.</p>
+
+            <h2>Umelecké kováčstvo na mieru</h2>
+            <p>Naša kováčska dielňa sa špecializuje na <strong>umelecké spracovanie kovov</strong>. Zabezpečíme pre vás kompletný proces od:</p>
+            <ul>
+                <li>úvodnej konzultácie,</li>
+                <li>grafického návrhu,</li>
+                <li>až po finálnu realizáciu diela.</li>
+            </ul>
+            <p>Vytvárame originálne produkty pre <strong>interiér aj exteriér</strong>, presne podľa vašich predstáv.</p>
+
+            <h2>Mladý kreatívny tím</h2>
+            <p>Naši mladí umelci vkladajú do každej realizácie maximálnu snahu, kreativitu a remeselnú česť. Každý kus je výsledkom ručnej práce, nadšenia a profesionálneho prístupu.</p>
+
+            <h2>Filozofia tvorby</h2>
+            <p>Veríme v diela, ktoré:</p>
+            <ul>
+                <li>majú <strong>vysokú umeleckú hodnotu</strong>,</li>
+                <li>sú <strong>kuté na mieru</strong>,</li>
+                <li>dokážu sprijemniť pracovné aj súkromné prostredie,</li>
+                <li>spájajú estetiku, funkčnosť a trvácnosť.</li>
+            </ul>
+
+            <h2>Udržateľnosť a zodpovednosť</h2>
+            <p>Vo výrobe využívame <strong>prvky cirkulárnej ekonomiky</strong>, čím prispievame k efektívnemu využívaniu materiálov a ochrane životného prostredia.</p>
+
+            <h2>Medzinárodná spolupráca</h2>
+            <p>Naše diela majú presah za hranice Slovenska – <strong>spolupracujeme so zahraničnými partnermi</strong>, vďaka čomu prinášame moderné trendy a techniky priamo do našej dielne.</p>
+        </div>
+    </div>
+</section>
         <!-- about section ends -->
         
         <!-- icons section starts -->
