@@ -58,6 +58,7 @@
 
     <!-- tu konči ok-->
      <!-- about start-->
+    
 <section class="about" id="about">
     <h1 class="heading"> <span> O </span> nás </h1>
 
@@ -65,13 +66,17 @@
         .about .row {
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
+            align-items: flex-start;   /* video sa nenatiahne na výšku textu */
             gap: 3rem;
             padding: 2rem 5%;
         }
 
+        /* Video ostane pri scrollovaní prilepené na ľavej strane */
         .about .row .video-container {
             flex: 1 1 35rem;
+            position: sticky;
+            top: 10rem;                /* odstup od hlavičky, prípadne uprav */
+            align-self: flex-start;
         }
 
         .about .row .content {
@@ -118,6 +123,14 @@
         .about .row .content strong {
             color: #333;
         }
+
+        /* Na mobile a tablete nie je sticky, video je nad textom */
+        @media (max-width: 768px) {
+            .about .row .video-container {
+                position: static;
+                flex: 1 1 100%;
+            }
+        }
     </style>
 
     <div class="row">
@@ -161,6 +174,7 @@
         </div>
     </div>
 </section>
+
         <!-- about section ends -->
         
         <!-- icons section starts -->
