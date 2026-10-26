@@ -99,7 +99,7 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(s.jpg) no-repeat; /* Opravená cesta k obrázku */
+    background: url(pozadie domov.png) no-repeat; /* Opravená cesta k obrázku */
     background-size: cover;
     background-position: center;
 }
