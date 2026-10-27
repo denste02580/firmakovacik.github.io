@@ -98,9 +98,11 @@ header .fa-bars {
 .home {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    width: 100%;
+    aspect-ratio: 1744 / 608;          
+    min-height: 0;                      
     background: url(pozadie1.jpg) no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;         
     background-position: center;
 }
 
