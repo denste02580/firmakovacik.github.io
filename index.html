@@ -826,6 +826,65 @@
      </div>
 </section>
 </footer>
+  <!-- lightbox pre fotogalériu -->
+<div id="lightbox" class="lightbox">
+    <span class="lb-close">&times;</span>
+    <span class="lb-prev">&#10094;</span>
+    <img class="lb-img" src="" alt="">
+    <span class="lb-next">&#10095;</span>
+</div>
+
+    <script>
+    const galleryImages = Array.from(document.querySelectorAll('#photo-gallery .gallery-item img'));
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = lightbox.querySelector('.lb-img');
+    let current = 0;
+
+    function showImage(index) {
+        current = (index + galleryImages.length) % galleryImages.length;
+        lbImg.src = galleryImages[current].src;
+    }
+
+    function openLightbox(index) {
+        showImage(index);
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    galleryImages.forEach((img, i) => {
+        img.addEventListener('click', () => openLightbox(i));
+    });
+
+    lightbox.querySelector('.lb-close').addEventListener('click', closeLightbox);
+    lightbox.querySelector('.lb-prev').addEventListener('click', (e) => { e.stopPropagation(); showImage(current - 1); });
+    lightbox.querySelector('.lb-next').addEventListener('click', (e) => { e.stopPropagation(); showImage(current + 1); });
+
+    // kliknutie na tmavé pozadie zavrie obrázok
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    // klávesnica: Esc zavrie, šípky listujú
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') showImage(current - 1);
+        if (e.key === 'ArrowRight') showImage(current + 1);
+    });
+
+    // posunutie prstom na mobile
+    let touchStartX = 0;
+    lightbox.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; });
+    lightbox.addEventListener('touchend', (e) => {
+        const diff = e.changedTouches[0].screenX - touchStartX;
+        if (Math.abs(diff) > 50) showImage(diff > 0 ? current - 1 : current + 1);
+    });
+</script>
 </body>
 </html>
 
