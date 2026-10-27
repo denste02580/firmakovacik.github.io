@@ -703,4 +703,62 @@ video {
 
 }
 
+.catalog {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2rem 5% 4rem;
+}
+
+.catalog-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3rem;
+    background: #fdf8f3;
+    border-left: .6rem solid #d2691e;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.15);
+}
+
+.catalog-box > i {
+    font-size: 7rem;
+    color: #d2691e;
+}
+
+.catalog-text {
+    flex: 1 1 30rem;
+}
+
+.catalog-text h3 {
+    font-size: 2.6rem;
+    color: #333;
+    margin-bottom: .8rem;
+}
+
+.catalog-text p {
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.catalog-buttons .btn {
+    display: inline-block;
+    margin: 0;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    background: #d2691e;
+    color: #fff;
+    border: .2rem solid #d2691e;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.catalog-buttons .btn:hover {
+    background: #b5571a;
+    border-color: #b5571a;
+}
 
