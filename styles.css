@@ -110,7 +110,7 @@ header .fa-bars {
 .home .content {
     position: absolute;
     left: 5.5%;
-    top: 68%;                           /* 0% = vrch fotky, 100% = spodok */
+    top: 80%;                           /* 0% = vrch fotky, 100% = spodok */
     max-width: 50rem;
     margin: 0;
 }
