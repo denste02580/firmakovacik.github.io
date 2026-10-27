@@ -770,3 +770,18 @@ video {
     border-radius: .5rem;
     box-shadow: 0 .3rem 1rem rgba(0,0,0,.2);
 }
+@media (max-width: 768px) {
+    header {
+        position: relative !important;   /* hlavička prestane prekrývať obsah */
+    }
+
+    .home {
+        aspect-ratio: 1744 / 608;        /* fotka sa zobrazí celá aj s textom */
+        margin-top: 0;
+    }
+
+    .home .content .btn {
+        padding: .5rem 1.4rem;
+        font-size: 1.2rem;               /* menšie tlačidlo, aby neprekrylo text na fotke */
+    }
+}
