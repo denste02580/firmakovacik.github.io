@@ -770,7 +770,7 @@ video {
     border-radius: .5rem;
     box-shadow: 0 .3rem 1rem rgba(0,0,0,.2);
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     header {
         position: relative !important;   /* hlavička prestane prekrývať obsah */
     }
