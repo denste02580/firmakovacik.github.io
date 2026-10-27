@@ -844,3 +844,19 @@ video {
 .lightbox .lb-next:hover {
     color: var(--pink);
 }
+@media (max-width: 991px) {
+    header .navbar {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1rem;
+    }
+
+    header #toggler:checked ~ .navbar {
+        display: block;
+    }
+}
