@@ -255,6 +255,21 @@ header .fa-bars {
     
 }
 
+.about-banner {
+    width: 100%;
+    padding: 2rem 5%;
+}
+
+.about-banner img {
+    display: block;
+    width: 100%;
+    max-width: 120rem;
+    height: auto;
+    margin: 0 auto;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.15);
+}
+
 .more-text {
     display: none;
     margin-top: 10px;
