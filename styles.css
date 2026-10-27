@@ -98,6 +98,7 @@ header .fa-bars {
 .home {
     display: flex;
     align-items: center;
+    position: relative;
     width: 100%;
     aspect-ratio: 1744 / 608;          
     min-height: 0;                      
@@ -107,8 +108,11 @@ header .fa-bars {
 }
 
 .home .content {
+    position: absolute;
+    left: 5.5%;
+    top: 68%;                           /* 0% = vrch fotky, 100% = spodok */
     max-width: 50rem;
-    ;
+    margin: 0;
 }
 .home .content h3{
     font-size: 6rem;
