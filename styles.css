@@ -762,3 +762,11 @@ video {
     border-color: #b5571a;
 }
 
+.catalog-box .catalog-img {
+    width: 12rem !important;
+    max-width: 12rem !important;
+    height: auto !important;
+    flex: 0 0 auto;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem 1rem rgba(0,0,0,.2);
+}
