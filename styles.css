@@ -785,3 +785,62 @@ video {
         font-size: 1.2rem;               /* menšie tlačidlo, aby neprekrylo text na fotke */
     }
 }
+
+#photo-gallery .gallery-item img {
+    cursor: zoom-in;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .92);
+    z-index: 2000;                 /* nad hlavičkou */
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox .lb-img {
+    max-width: 92%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: .5rem;
+}
+
+.lightbox .lb-close,
+.lightbox .lb-prev,
+.lightbox .lb-next {
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    text-transform: none;
+}
+
+.lightbox .lb-close {
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.lightbox .lb-prev,
+.lightbox .lb-next {
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    padding: 1.5rem;
+}
+
+.lightbox .lb-prev { left: 1rem; }
+.lightbox .lb-next { right: 1rem; }
+
+.lightbox .lb-close:hover,
+.lightbox .lb-prev:hover,
+.lightbox .lb-next:hover {
+    color: var(--pink);
+}
