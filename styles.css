@@ -531,9 +531,11 @@ header .fa-bars {
 
 .gallery-item video {
     width: 100%;
-    height: auto;
-    border-radius: 10px; /* Zaoblené rohy aj pre obsah */
-    object-fit: cover; /* Zabezpečí, že obrázky a videá budú vyplňovať celý kontajner */
+    height: 100%;          /* vyplní dlaždicu, nie viac */
+    border-radius: 10px;
+    object-fit: cover;   /* zobrazí celé video aj s lištou */
+    background: #000;
+    display: block;
 }
 .gallery-item img {
     width: 100%;
