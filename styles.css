@@ -868,28 +868,60 @@ video {
     text-decoration: underline;
 }
 
-.mapa {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.mapa-box {
-  max-width: 1000px;
-  margin: 20px auto 0;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-}
-
-.mapa-box iframe {
+section.mapa {
   width: 100%;
-  height: 450px;
+  margin: 40px 0 30px;
+  text-align: left;
+}
+
+section.mapa .mapa-nadpis {
+  margin: 0 0 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+section.mapa .mapa-podnadpis {
+  margin: 0 0 16px;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+section.mapa .mapa-box {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  border: 1px solid #e3e3e3;
+  line-height: 0;
+}
+
+section.mapa .mapa-box iframe {
+  width: 100%;
+  height: 400px;
   display: block;
   border: 0;
 }
 
+section.mapa .mapa-tlacidlo {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 22px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+section.mapa .mapa-tlacidlo:hover {
+  background: #1558b0;
+  transform: translateY(-1px);
+}
+
 @media (max-width: 600px) {
-  .mapa-box iframe {
+  section.mapa .mapa-box iframe {
     height: 300px;
   }
+}
 }
